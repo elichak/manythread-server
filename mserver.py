@@ -25,8 +25,8 @@ class ClientThread(threading.Thread):
             if msg == '':
                 print('Disconnection...')
                 break
-            elif msg == 'Кто самая красивая девушка?':
-                self.csocket.send(bytes("Лиза Кунец!", "UTF-8"))
+            elif msg == 'Как дела?':
+                self.csocket.send(bytes("Отлично!", "UTF-8"))
 
 while True:
     server.listen(1)
