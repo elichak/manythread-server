@@ -8,7 +8,7 @@ PORT = 1488
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((SERVER, PORT))
-client.sendall(bytes("Лиза", "UTF-8"))
+client.sendall(bytes("Hello", "UTF-8"))
 
 
 def task():
